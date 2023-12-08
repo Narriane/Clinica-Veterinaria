@@ -1,0 +1,33 @@
+POST http://localhost:3333/cavalo
+Content-Type: application/json
+
+{
+    "raca": "raca 01",
+    "adestrador": "adestrador 01",
+    "altura": "altura",
+    "peso": "peso"
+}
+
+###
+
+GET http://localhost:3333/cavalo
+
+###
+
+GET http://localhost:3333/cavalo?search=adestrador
+
+###
+
+PUT http://localhost:3333/cavalos/49966199-03f8-4365-9abb-710f5ef9779e
+Content-Type: application/json
+
+{
+    "raca": "Puro-sangue",
+    "adestrador": "Professor",
+    "altura": "170",
+    "peso":"500"
+}
+
+###
+
+DELETE http://localhost:3333/cavalos/3d737a6b-2133-4fd6-b67d-851139dc9d00
